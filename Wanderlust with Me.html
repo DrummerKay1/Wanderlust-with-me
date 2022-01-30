@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderlust with Me</title>
+    <style>
+      .page {
+        background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+        border-radius: 20px;
+        color: #142d4c;
+        display: block;
+        font-family: cursive;
+        margin: 0 auto;
+        max-width: 600px;
+        padding: 30px 60px;
+        text-align: center;
+        width: 90%;
+      }
+      h1 {
+        border: 3px solid #38598b;
+        color: linear-gradient(to top, #09203f 0%, #537895 100%);
+        padding: 10px;
+      }
+      h2 {
+        color: #38598b;
+        font-style: italic;
+      }
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        font-size: larger;
+        list-style: none;
+      }
+
+      hr {
+        color: #38598b;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 15px;
+        width: 400px;
+      }
+      span {
+        font-size: 17px;
+      }
+      strong {
+        color: #38598b;
+      }
+      p {
+        font-size: 18px;
+        line-height: 32px;
+      }
+      .instagram,
+      a:visited {
+        color: #38598b;
+        transition: all 200ms ease-in-out;
+      }
+      .instagram:hover a:visited {
+        color: rgb(95, 175, 201);
+        cursor: pointer;
+      }
+      button {
+        background: #537895;
+        border: 1px solid #09203f;
+        border-radius: 30px;
+        box-shadow: 8px 8px 6px #033052;
+        color: #d1fdff;
+        display: block;
+        font-size: 18px;
+        margin: 20px auto;
+        padding: 12px 14px;
+        transition: all 300ms ease-in-out;
+      }
+      button:hover {
+        background: linear-gradient(
+          109.6deg,
+          rgb(44, 83, 131) 18.9%,
+          rgb(95, 175, 201) 91.1%
+        );
+        color: #d1fdff;
+        cursor: pointer;
+      }
+      .coded {
+        color: rgb(95, 175, 201);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Wanderlust with Me</h1>
+      <h2>Capture the life you love</h2>
+      <ul>
+        <li>Breathe in and enjoy your suroundings</li>
+        <li>Love the life you choose</li>
+        <li>Travel the world</li>
+        <hr />
+      </ul>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/022/893/original/IMG-20210409-WA0027.jpg?1639628522"
+        alt="BLT Image"
+      />
+      <span
+        ><strong> Wanderlust</strong> <em>(n)</em>: a strong desire to travel
+      </span>
+      <hr />
+      <p>
+        After deciding back in 2016 that I wasn’t going to be able to afford to
+        go to university due to the obscenely high tuition rates I decided to
+        defy the norm and take a “gap year” to work, volunteer and travel the
+        world. Once I stepped off the plane at my first stop in Thailand I knew
+        I was going to be headed down a path that most Americans wouldn’t even
+        fathom- a life filled with wanderlust, adventure and no permanent 9-5!
+        Since then I have learned that traveling solo and cheaply is not only
+        possible but easier than staying in one place- and I am here to
+        encourage you to do so.
+      </p>
+      <p>
+        Come explore with me
+        <span class="instagram">
+          <a href="https://www.instagram.com/drummerkay1/" target="_blank">
+            @drummerkay1
+          </a>
+        </span>
+      </p>
+      <button>Subscribe Now✈</button>
+
+      <div class="coded">Coded by Kayla Neuss</div>
+      <script>
+        function subscribeNow() {
+          let name = prompt(
+            "Hello there, fellow traveler🖐 What is your name?"
+          );
+          alert("Let's travel together, " + name + "!✈🚘🌎");
+          let email = prompt("What is your email?📧");
+          alert(
+            "I will be emailing you shortly! I look foward to sharing the world with you, " +
+              name +
+              "!🌏"
+          );
+        }
+
+        let subscribeButton = document.querySelector("Button");
+        subscribeButton.addEventListener("click", subscribeNow);
+      </script>
+    </div>
+  </body>
+</html>
